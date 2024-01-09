@@ -1,11 +1,11 @@
 const productos = [
-  { nombre: "Remera", precio: 16500 },
-  { nombre: "Jean", precio: 21800 },
-  { nombre: "Musculosa", precio: 11500 },
-  { nombre: "Bermuda", precio: 14000 },
-  { nombre: "Media", precio: 3500 },
-  { nombre: "Boxer", precio: 4600 },
-  { nombre: "Calza", precio: 12700 },
+  { nombre: "remera", precio: 16500 },
+  { nombre: "jean", precio: 21800 },
+  { nombre: "musculosa", precio: 11500 },
+  { nombre: "bermuda", precio: 14000 },
+  { nombre: "media", precio: 3500 },
+  { nombre: "boxer", precio: 4600 },
+  { nombre: "calza", precio: 12700 },
 ]
 
 let carrito = []
@@ -19,7 +19,7 @@ saludar();
 let seleccion = prompt(nombre + "¿Desea comprar algun producto?")
 
 while (seleccion != "si" && seleccion != "no") {
-  alert(nombre + "Por Favor ingrese `si` o `no`")
+  alert(nombre + ": Por Favor ingrese `si` o `no`")
   seleccion = prompt(nombre + "¿Desea comprar algun producto?")
 }
 
@@ -37,25 +37,25 @@ while (seleccion != "no") {
 
   if (producto == "Remera" || producto == "Jean" || producto == "Musculosa" || producto == "Bermuda" || producto == "Media" || producto == "Boxer" || producto == "Calza") {
     switch (producto) {
-      case "Remera":
+      case "remera":
         precio = 16500
         break
-      case "Jean":
+      case "jean":
         precio = 21800
         break
-      case "Musculosa":
+      case "musculosa":
         precio = 11500
         break
-      case "Bermuda":
+      case "bermuda":
         precio = 14000
         break
-      case "Media":
+      case "media":
         precio = 3500
         break
-      case "Boxer":
+      case "boxer":
         precio = 4600
         break
-      case "Calza":
+      case "calza":
         precio = 12700
         break
       default:
